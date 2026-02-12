@@ -1,0 +1,30 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "publisher": "ts-node src/publisher.ts",
+    "subscriber": "ts-node src/subscriber.ts",
+    "build": "tsc",
+    "start:pub": "node dist/publisher.js",
+    "start:sub": "node dist/subscriber.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nats",
+    "typescript",
+    "publish-subscribe",
+    "messaging"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Proyecto de ejemplo para aprender publish/subscribe con NATS usando TypeScript",
+  "dependencies": {
+    "nats": "^2.29.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
